@@ -1,7 +1,9 @@
-const TodoItems = () => {
-    return (
-        <h2>Todo Items</h2>
-    );
+const TodoItems = (props) => {
+   return (
+        props.items.map(item => 
+            (<h3>{item.title}</h3>)
+        )
+   );
 };
 
 export default TodoItems;
