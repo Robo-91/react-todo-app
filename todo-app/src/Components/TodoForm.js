@@ -22,7 +22,7 @@ const TodoForm = (props) => {
             id: Math.random(),
             title: newTitle,
             date: new Date(newDate)
-        }
+        };
 
         props.onAddTodo(newTodoData);
         setNewTitle('');

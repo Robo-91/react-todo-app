@@ -18,10 +18,21 @@ function App() {
     });
   };
 
+  // const updateTodoTitle = () => {
+
+  // };
+
+  const deleteTodoHandler = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
+  };
+
   return (
     <div className="App">
       <TodoForm onAddTodo={addTodoHandler} />
-      <TodoItems items={todos} />
+      <TodoItems 
+        items={todos}
+        deleteTodo={deleteTodoHandler}
+      />
     </div>
   );
 }
