@@ -1,31 +1,32 @@
 import React, { useState } from 'react';
 import './TodoForm.css';
 
-const TodoForm = () => {
+const TodoForm = (props) => {
     const [newTitle, setNewTitle] = useState('');
     const [newDate, setNewDate] = useState(''); 
 
     const addNewTitle = (event) => {
         setNewTitle(event.target.value);
-        console.log(newTitle);
+        // console.log(newTitle);
     };
 
     const addNewDate = (event) => {
         setNewDate(event.target.value);
-        console.log(newDate);
+        // console.log(newDate);
     };
 
     const submitForm = (event) => {
         event.preventDefault();
 
         const newTodoData = {
+            id: Math.random(),
             title: newTitle,
             date: new Date(newDate)
         }
 
+        props.onAddTodo(newTodoData);
         setNewTitle('');
         setNewDate('');
-        console.log(newTodoData);
     };
 
     return (
