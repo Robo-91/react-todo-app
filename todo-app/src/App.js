@@ -18,10 +18,6 @@ function App() {
     });
   };
 
-  // const updateTodoTitle = () => {
-
-  // };
-
   const deleteTodoHandler = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };

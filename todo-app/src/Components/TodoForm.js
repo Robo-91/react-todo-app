@@ -7,12 +7,10 @@ const TodoForm = (props) => {
 
     const addNewTitle = (event) => {
         setNewTitle(event.target.value);
-        // console.log(newTitle);
     };
 
     const addNewDate = (event) => {
         setNewDate(event.target.value);
-        // console.log(newDate);
     };
 
     const submitForm = (event) => {
