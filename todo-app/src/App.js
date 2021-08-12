@@ -22,6 +22,16 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
+  const updateTodoHandler = (id) => {
+    const updateTitle = prompt('Enter new Title:');
+    setTodos(todos.map((todo) => {
+      if(todo.id === id){
+        todo.title = updateTitle;
+      }
+      return todo;
+    }));
+  };
+
   return (
     <div className="App">
       <TodoForm 
@@ -30,6 +40,7 @@ function App() {
       <TodoItems 
         items={todos}
         deleteTodo={deleteTodoHandler}
+        updateTodo={updateTodoHandler}
       />
     </div>
   );
