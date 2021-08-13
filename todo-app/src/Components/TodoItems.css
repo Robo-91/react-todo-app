@@ -1,0 +1,41 @@
+.todo-item {
+    justify-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: #edf5e1;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 1em;
+}
+
+.todo-item:hover{
+    background-color: #379683;
+    color: #EDF5E1;
+}
+
+.update-btn {
+    height: 2.8em;
+    margin: inherit;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    background-color: #EDF5E1;
+    transition: 0.5s;
+}
+
+.update-btn:hover {
+    background-color: #8EE4AF;
+}
+
+.delete-btn {
+    height: 2.8em;
+    margin: inherit;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    background-color: #EDF5E1;
+    transition: 0.5s;
+}
+
+.delete-btn:hover {
+    background-color: salmon;
+}

@@ -30,17 +30,24 @@ const TodoForm = (props) => {
 
     return (
         <div>
-            <input 
+            <input
+                className="titleInput"
                 type="text" 
                 value={newTitle}
+                placeholder="Enter Title"
                 onChange={addNewTitle}
             />
-            <input 
+            <input
+                className="dateInput"
                 type="date" 
                 value={newDate} 
                 onChange={addNewDate}
             />
-            <button type="submit" onClick={submitForm}>Submit</button>
+            <button
+                className="submit" 
+                type="submit" 
+                onClick={submitForm}>Submit
+            </button>
         </div>
     );
 };

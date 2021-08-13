@@ -1,6 +1,10 @@
 .App {
+  display: grid;
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  color: #05386B;
+  width: 80%;
+  margin: auto;
 }
 
 .App-header {

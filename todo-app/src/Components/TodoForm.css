@@ -1,0 +1,39 @@
+.form {
+    border: 1px solid #05386B;
+    font-family: 'Nunito', sans-serif; 
+}
+
+.titleInput {
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    height: 2.1em;
+    display: block;
+    margin: auto;
+    width: 12rem;
+}
+
+.dateInput {
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    height: 2.3em;
+    display: block;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 12rem;
+}
+
+.submit {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 3%;
+    width: 5rem;
+    height: 2.2em;
+    color: #05386B;
+    border: none;
+    background-color: #EDF5E1;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    background-color: #8EE4AF;
+}
