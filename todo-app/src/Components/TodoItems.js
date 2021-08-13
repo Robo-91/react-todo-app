@@ -9,7 +9,7 @@ const TodoItems = (props) => {
                 <ul key={item.id}>
                     <button onClick={() => props.updateTodo(item.id)}>Update Title</button>
                     <h3>{item.title}</h3>
-                    <p>{`${item.date.getMonth()}-${item.date.getDay()}-${item.date.getFullYear()}`}</p>
+                    <p>{`${item.date.getMonth()}-${item.date.getUTCDate()}-${item.date.getFullYear()}`}</p>
                     <button onClick={() => props.deleteTodo(item.id)}>Delete</button>
                 </ul>
             )

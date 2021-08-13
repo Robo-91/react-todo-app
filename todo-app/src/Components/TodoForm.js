@@ -10,6 +10,7 @@ const TodoForm = (props) => {
     };
 
     const addNewDate = (event) => {
+        console.log(event.target.value);
         setNewDate(event.target.value);
     };
 
@@ -37,8 +38,6 @@ const TodoForm = (props) => {
             <input 
                 type="date" 
                 value={newDate} 
-                min="2018-01-01" 
-                max="2025-01-01"
                 onChange={addNewDate}
             />
             <button type="submit" onClick={submitForm}>Submit</button>
